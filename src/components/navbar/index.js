@@ -9,7 +9,8 @@ import {
   NavLinksScroll,
   NavLinksRouter,
   NavButton,
-  NavButtonLink
+  NavButtonLinkRouter,
+  NavButtonLinkNewPage, NavLinksPage
 } from "./navbar-elements";
 import {useEffect, useState} from "react";
 import {IconContext} from "react-icons/lib";
@@ -46,40 +47,9 @@ const Navbar = ({toggle}) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinksScroll
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                  >
-                  About
-                </NavLinksScroll>
-              </NavItem>
-              <NavItem>
-                <NavLinksScroll
-                  to="music"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Discover
-                </NavLinksScroll>
-              </NavItem>
-              <NavItem>
-                <NavLinksScroll
-                  to="services"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Advantages
-                </NavLinksScroll>
+                <NavLinksPage to="/commands" onClick={toggleHome}>
+                  Commands
+                </NavLinksPage>
               </NavItem>
               <NavItem>
                 <NavLinksRouter
@@ -92,7 +62,13 @@ const Navbar = ({toggle}) => {
               </NavItem>
             </NavMenu>
             <NavButton>
-              <NavButtonLink to="/signin">Login</NavButtonLink>
+              <NavButtonLinkRouter
+                // href="//discord.com/oauth2/authorize?client_id=825433682205606000&redirect_uri=https%3A%2F%2Fsamuraibot.xyz%2Fcallback&response_type=code&scope=identify%20email%20guilds"
+                to="/login"
+                onClick={toggleHome}
+              >
+                Login
+              </NavButtonLinkRouter>
             </NavButton>
           </NavbarContainer>
         </Nav>

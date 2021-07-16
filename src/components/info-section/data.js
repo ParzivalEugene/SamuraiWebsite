@@ -24,7 +24,7 @@ export const MusicDescription = {
   lightTextDesc: false,
   topLine: "Music",
   headLine: "Comfortable music system",
-  description: "Can play music from Spotify, YouTube and other open sources. Finds data with incredible accuracy " +
+  description: "Can play music from YouTube and other open sources. Finds data with incredible accuracy " +
     "by request or link and plays music in excellent quality. A flexible system of playlists and queues will make " +
     "listening to music as comfortable as possible.",
   buttonLabel: "What about levels?",

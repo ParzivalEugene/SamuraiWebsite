@@ -6,7 +6,8 @@ import {
   FooterLinkTitle,
   FooterLinksContainer,
   FooterLinksWrapper,
-  FooterLinkItems
+  FooterLinkItems,
+  FooterLinkToSite
 } from "./footer-elements";
 import {
   SocialIcons,
@@ -31,39 +32,59 @@ const Footer = () => {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>About us</FooterLinkTitle>
-              <FooterLink to="/signin">AAAAAAA</FooterLink>
-              <FooterLink to="/signin">BBBBBBB</FooterLink>
-              <FooterLink to="/signin">CCCCCCC</FooterLink>
-              <FooterLink to="/signin">DDDDDDD</FooterLink>
-              <FooterLink to="/signin">EEEEEEE</FooterLink>
+              <FooterLinkTitle>Product</FooterLinkTitle>
+              <FooterLinkToSite
+                href="//discord.com/oauth2/authorize?client_id=825433682205606000&permissions=2151025856&redirect_uri=https%3A%2F%2Fsamuraibot.xyz%2Fcallback&response_type=code&scope=identify%20email%20guilds%20bot%20applications.commands"
+                target="_blank"
+              >Add to Discord
+              </FooterLinkToSite>
+              <FooterLink to="/commands">Commands</FooterLink>
+              <FooterLinkToSite
+                href="//www.tinkoff.ru/sl/N4WrFLpAiu"
+                target="_blank"
+              >
+                Donation
+              </FooterLinkToSite>
             </FooterLinkItems>
             <FooterLinkItems>
-              <FooterLinkTitle>Paragraph</FooterLinkTitle>
-              <FooterLink to="/signin">AAAAAAA</FooterLink>
-              <FooterLink to="/signin">BBBBBBB</FooterLink>
-              <FooterLink to="/signin">CCCCCCC</FooterLink>
-              <FooterLink to="/signin">DDDDDDD</FooterLink>
-              <FooterLink to="/signin">EEEEEEE</FooterLink>
+              <FooterLinkTitle>Resources</FooterLinkTitle>
+              <FooterLinkToSite
+                href="//github.com/ParzivalEugene/Samurai"
+                target="_blank"
+              >
+                Project Code
+              </FooterLinkToSite>
+              <FooterLinkToSite
+                href="//github.com/invincible-warriors"
+                target="_blank"
+              >
+                Invincible Warriors Company
+              </FooterLinkToSite>
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
             <FooterLinkItems>
-              <FooterLinkTitle>Lorem ipsum</FooterLinkTitle>
-              <FooterLink to="/signin">AAAAAAA</FooterLink>
-              <FooterLink to="/signin">BBBBBBB</FooterLink>
-              <FooterLink to="/signin">CCCCCCC</FooterLink>
-              <FooterLink to="/signin">DDDDDDD</FooterLink>
-              <FooterLink to="/signin">EEEEEEE</FooterLink>
+              <FooterLinkTitle>Contact</FooterLinkTitle>
+              <FooterLinkToSite
+                href="mailto:contact@samuraibot.xyz"
+                target="_blank"
+              >
+                contact@samuraibot.xyz
+              </FooterLinkToSite>
+              <FooterLinkToSite
+                href="//discord.gg/RNYqdgRT4w"
+                target="_blank"
+              >
+                Samurai Community Discord
+              </FooterLinkToSite>
+              <FooterLinkToSite
+                href="//discord.gg/anjq9YFW59"
+                target="_blank"
+              >
+                Invincible Warriors Discord
+              </FooterLinkToSite>
             </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>BLa bla bla</FooterLinkTitle>
-              <FooterLink to="/signin">AAAAAAA</FooterLink>
-              <FooterLink to="/signin">BBBBBBB</FooterLink>
-              <FooterLink to="/signin">CCCCCCC</FooterLink>
-              <FooterLink to="/signin">DDDDDDD</FooterLink>
-              <FooterLink to="/signin">EEEEEEE</FooterLink>
-            </FooterLinkItems>
+
           </FooterLinksWrapper>
         </FooterLinksContainer>
         <SocialMedia>

@@ -13,6 +13,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+  transition: 0.5s;
   
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -96,6 +97,25 @@ export const NavLinksScroll = styled(LinkScroll)`
   }
 `;
 
+export const NavLinksPage = styled(LinkRouter)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  transition: 0.2s color ease-in-out;
+
+  &:hover {
+    color: #A16AE8;
+  }
+
+  &.active {
+    border-bottom: 3px solid #A16AE8;
+  }
+`;
+
 export const NavLinksRouter = styled.a`
   color: #fff;
   display: flex;
@@ -124,7 +144,27 @@ export const NavButton = styled.nav`
   }
 `;
 
-export const NavButtonLink = styled(LinkRouter)`
+export const NavButtonLinkRouter = styled(LinkRouter)`
+  border-radius: 50px;
+  background: #A16AE8;
+  white-space: nowrap;
+  padding: 10px 22px;
+  color: #010606;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+  }
+`;
+
+export const NavButtonLinkNewPage = styled.a`
   border-radius: 50px;
   background: #A16AE8;
   white-space: nowrap;

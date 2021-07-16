@@ -3,17 +3,24 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div`
   color: #fff;
+  height: 100vh;
   background: ${({lightBg}) => (lightBg ? "#f9f9f9": "#010606")};
   
   @media screen and (max-width: 768px) {
     padding: 100px 0;
+    height: 120vh;
+  }
+  
+  @media screen and (max-width: 400px) {
+    padding: 100px 0;
+    height: 140vh;
   }
 `;
 
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 860px;
+  height: 100%;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
