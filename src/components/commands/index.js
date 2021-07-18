@@ -30,8 +30,10 @@ const CommandsSection = () => {
           <CommandsCommandsSelectorItem onClick={() => filter("All")}>All</CommandsCommandsSelectorItem>
           <CommandsCommandsSelectorItem onClick={() => filter("Music")}>Music</CommandsCommandsSelectorItem>
           <CommandsCommandsSelectorItem onClick={() => filter("Levels")}>Levels</CommandsCommandsSelectorItem>
-          <CommandsCommandsSelectorItem onClick={() => filter("Moderation")}>Moderation</CommandsCommandsSelectorItem>
+          <CommandsCommandsSelectorItem onClick={() => filter("Birthdays")}>Birthdays</CommandsCommandsSelectorItem>
           <CommandsCommandsSelectorItem onClick={() => filter("Games")}>Games</CommandsCommandsSelectorItem>
+          <CommandsCommandsSelectorItem onClick={() => filter("Translator")}>Translator</CommandsCommandsSelectorItem>
+          <CommandsCommandsSelectorItem onClick={() => filter("Glossary")}>Glossary</CommandsCommandsSelectorItem>
           <CommandsCommandsSelectorItem onClick={() => filter("Mini")}>Mini</CommandsCommandsSelectorItem>
         </CommandsSelectorMenu>
         <CommandsCardsWrapper>

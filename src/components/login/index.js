@@ -8,8 +8,12 @@ import {
   HeroP
 } from "../hero-section/hero-elements";
 import {NavButtonLinkRouter} from "../navbar/navbar-elements";
+import {animateScroll as scroll} from "react-scroll";
 
 const LoginSection = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
 
   return (
     <HeroContainer>
@@ -18,7 +22,7 @@ const LoginSection = () => {
         <HeroH1>Oops...</HeroH1>
         <HeroP>Login section is under developing, but you can also add the bot to the server or view its commands.</HeroP>
         <HeroButtonWrapper>
-          <NavButtonLinkRouter to="/">Go home</NavButtonLinkRouter>
+          <NavButtonLinkRouter to="/" onclcik={toggleHome}>Go home</NavButtonLinkRouter>
         </HeroButtonWrapper>
       </HeroContent>
     </HeroContainer>

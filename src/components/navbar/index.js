@@ -47,17 +47,26 @@ const Navbar = ({toggle}) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinksPage to="/commands" onClick={toggleHome}>
-                  Commands
-                </NavLinksPage>
-              </NavItem>
-              <NavItem>
                 <NavLinksRouter
                   href="//discord.com/oauth2/authorize?client_id=825433682205606000&permissions=2151025856&redirect_uri=https%3A%2F%2Fsamuraibot.xyz%2Fcallback&response_type=code&scope=identify%20email%20guilds%20bot%20applications.commands"
                   target="_blank"
                   aria-label="DiscordAdd"
                 >
                   Add to Discord
+                </NavLinksRouter>
+              </NavItem>
+              <NavItem>
+                <NavLinksPage to="/commands" onClick={toggleHome}>
+                  Commands
+                </NavLinksPage>
+              </NavItem>
+              <NavItem>
+                <NavLinksRouter
+                  href="mailto:contact@samuraibot.xyz"
+                  target="_blank"
+                  aria-label="DiscordAdd"
+                >
+                  Support
                 </NavLinksRouter>
               </NavItem>
             </NavMenu>

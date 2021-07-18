@@ -7,7 +7,7 @@ export const CommandsContainer = styled.div`
   padding: 80px 0 0 0;
   //height: 100vh;
   height: auto;
-  min-height: 80vh;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
 
@@ -26,15 +26,17 @@ export const CommandsContainer = styled.div`
 
 export const CommandsContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
+  row-gap: 20px;
+  margin: 20px;
 `;
 
 export const CommandsSelectorMenu = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(8, minmax(0, 1fr));
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   padding: 16px;
@@ -51,7 +53,7 @@ export const CommandsSelectorMenu = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 50vh;
+    width: 100%;
   };
 `;
 
@@ -93,7 +95,6 @@ export const CommandsCardsWrapper = styled.div`
   height: auto;
   display: grid;
   grid-row-gap: 20px;
-  margin: 20px;
   transition: 0.2s ease-in-out;
 `;
 
@@ -112,7 +113,7 @@ export const CommandsCardContainer = styled.div`
 
 export const CommandsCardH1 = styled.h1`
   color: #fff;
-  margin: 5px;
+  margin: 5px 5px 10px;
   font-size: 20px;
 `;
 
@@ -124,9 +125,15 @@ export const CommandsCardP = styled.p`
 
 export const CommandsCardPermissions = styled.p`
   color: #fff;
-  font-size: 10px;
+  font-size: 16px;
   background-color: #A16AE8;
   border-radius: 2px;
   width: max-content;
   padding: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(161, 106, 232, 0.8);
+  }
 `;
