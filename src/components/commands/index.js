@@ -7,7 +7,7 @@ import {
   CommandsCardH1,
   CommandsCardContainer,
   CommandsCardP,
-  CommandsCardPermissions, CommandsCardsWrapper, CommandsContent
+  CommandsCardPermissions, CommandsCardsWrapper, CommandsContent, CommandsCardPermissionsContainer
 } from "./commands-elements";
 import {items} from "./data";
 import React, {useState} from "react";
@@ -44,7 +44,10 @@ const CommandsSection = () => {
                   <CommandsCardH1>{item.title}</CommandsCardH1>
                   <CommandsCardContainer>
                     <CommandsCardP>{item.description}</CommandsCardP>
-                    <CommandsCardPermissions>{item.permissions}</CommandsCardPermissions>
+                    <CommandsCardPermissionsContainer>
+                      <CommandsCardP>Permission:</CommandsCardP>
+                      <CommandsCardPermissions>{item.permissions}</CommandsCardPermissions>
+                    </CommandsCardPermissionsContainer>
                   </CommandsCardContainer>
                 </CommandsCard>
               )

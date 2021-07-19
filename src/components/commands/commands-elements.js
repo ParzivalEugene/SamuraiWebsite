@@ -109,6 +109,7 @@ export const CommandsCardContainer = styled.div`
   background-color: rgba(161, 106, 232, 0.1);
   border-radius: 5px;
   padding: 10px;
+  row-gap: 20px;
 `;
 
 export const CommandsCardH1 = styled.h1`
@@ -120,7 +121,15 @@ export const CommandsCardH1 = styled.h1`
 export const CommandsCardP = styled.p`
   color: #fff;
   font-size: 16px;
-  padding: 0 0 16px;
+`;
+
+export const CommandsCardPermissionsContainer = styled.div`
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-column: auto;
+  grid-column-gap: 10px;
+  align-items: center;
+  margin-top: 10px;
 `;
 
 export const CommandsCardPermissions = styled.p`
@@ -130,10 +139,5 @@ export const CommandsCardPermissions = styled.p`
   border-radius: 2px;
   width: max-content;
   padding: 5px;
-  cursor: pointer;
   transition: 0.2s ease-in-out;
-
-  &:hover {
-    background-color: rgba(161, 106, 232, 0.8);
-  }
 `;

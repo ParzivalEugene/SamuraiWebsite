@@ -38,12 +38,15 @@ const Footer = () => {
                 target="_blank"
               >Add to Discord
               </FooterLinkToSite>
-              <FooterLink to="/commands">Commands</FooterLink>
+              <FooterLink
+                to="/commands"
+                onClick={toggleHome}
+              >Commands
+              </FooterLink>
               <FooterLinkToSite
                 href="//www.tinkoff.ru/sl/N4WrFLpAiu"
                 target="_blank"
-              >
-                Donation
+              >Donation
               </FooterLinkToSite>
             </FooterLinkItems>
             <FooterLinkItems>
@@ -51,14 +54,12 @@ const Footer = () => {
               <FooterLinkToSite
                 href="//github.com/ParzivalEugene/Samurai"
                 target="_blank"
-              >
-                Project Code
+              >Project Code
               </FooterLinkToSite>
               <FooterLinkToSite
                 href="//github.com/invincible-warriors"
                 target="_blank"
-              >
-                Invincible Warriors Company
+              >Invincible Warriors Company
               </FooterLinkToSite>
             </FooterLinkItems>
           </FooterLinksWrapper>
@@ -68,20 +69,17 @@ const Footer = () => {
               <FooterLinkToSite
                 href="mailto:contact@samuraibot.xyz"
                 target="_blank"
-              >
-                contact@samuraibot.xyz
+              >contact@samuraibot.xyz
               </FooterLinkToSite>
               <FooterLinkToSite
                 href="//discord.gg/RNYqdgRT4w"
                 target="_blank"
-              >
-                Samurai Community Discord
+              >Samurai Community Discord
               </FooterLinkToSite>
               <FooterLinkToSite
                 href="//discord.gg/anjq9YFW59"
                 target="_blank"
-              >
-                Invincible Warriors Discord
+              >Invincible Warriors Discord
               </FooterLinkToSite>
             </FooterLinkItems>
 
