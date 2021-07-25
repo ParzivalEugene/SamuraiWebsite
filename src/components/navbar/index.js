@@ -63,7 +63,7 @@ const Navbar = ({toggle}) => {
               <NavItem>
                 <NavLinksRouter
                   href="mailto:contact@samuraibot.xyz"
-                  target="_blank"
+                  // target="_blank"
                   aria-label="DiscordAdd"
                 >
                   Support

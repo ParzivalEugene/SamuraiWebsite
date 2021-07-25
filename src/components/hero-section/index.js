@@ -22,7 +22,7 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Samurai</HeroH1>
         <HeroP>
-          An incredible discord bot named Samurai. It is simply irreplaceable on any server.
+          Unique discord bot – Samurai. Essential and useful tool on any server.
         </HeroP>
         <HeroButtonWrapper>
           <Button
